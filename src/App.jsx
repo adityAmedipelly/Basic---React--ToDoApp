@@ -30,7 +30,7 @@ function App(){
       <div>
       <h1> ToDo List </h1>
       <form onSubmit={savetodo}>
-        <input type='text' placeholder='add your todo ' name='toname'></input> <button> Save </button>
+        <input type='text' placeholder='add your todo ' name = 'toname' ></input> <button> Save </button>
       </form>
 
       <div class='outerdiv'>
@@ -51,7 +51,7 @@ function Todolistitems({value,indexnum,todolist,settodolist}){
     settodolist(finalData)
   }
   return(
-    <li> {value} <span onClick={deleteRow}>&times;</span></li>
+    <li> {value} <span onClick = {deleteRow} >&times;</span></li>
   )
 }
 
